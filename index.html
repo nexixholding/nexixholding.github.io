@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexix Holding - Qatar's Premier Business Conglomerate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS for animations and effects */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #003366 0%, #0099CC 100%);
+        }
+        
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #0099CC;
+            transition: width .3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header with Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="assests/images/nexixlogo.png" alt="Nexix Holding Logo" class="h-12 mr-3">
+                <div>
+                    <h1 class="text-xl font-bold text-blue-900">NEXIX HOLDING</h1>
+                    <p class="text-xs text-gray-600">Qatar's Business Leader</p>
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-blue-900 font-medium hover:text-blue-700">Home</a>
+                
+                <!-- Services Dropdown -->
+                <div class="dropdown relative">
+                    <button class="nav-link text-blue-900 font-medium hover:text-blue-700 flex items-center">
+                        Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-50">
+                        <a href="#it-services" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-700">IT Services</a>
+                        <a href="#healthcare" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-700">Healthcare</a>
+                        <a href="#home-care" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-700">Home Care</a>
+                        <a href="#hospitality" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-700">Hospitality</a>
+                        <a href="#contracting" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-700">Contracting</a>
+                        <a href="#consulting" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-700">Consulting</a>
+                        <a href="#construction" class="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-700">Construction</a>
+                    </div>
+                </div>
+                
+                <a href="#about" class="nav-link text-blue-900 font-medium hover:text-blue-700">About Us</a>
+                <a href="#companies" class="nav-link text-blue-900 font-medium hover:text-blue-700">Our Companies</a>
+                <a href="#contact" class="nav-link text-blue-900 font-medium hover:text-blue-700">Contact</a>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-blue-900">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-blue-900">Home</a>
+            
+            <!-- Mobile Services Dropdown -->
+            <div class="py-2">
+                <button id="mobile-services-button" class="flex items-center justify-between w-full text-blue-900">
+                    <span>Services</span>
+                    <i class="fas fa-chevron-down text-xs"></i>
+                </button>
+                <div id="mobile-services-menu" class="hidden pl-4 mt-2">
+                    <a href="#it-services" class="block py-2 text-gray-700">IT Services</a>
+                    <a href="#healthcare" class="block py-2 text-gray-700">Healthcare</a>
+                    <a href="#home-care" class="block py-2 text-gray-700">Home Care</a>
+                    <a href="#hospitality" class="block py-2 text-gray-700">Hospitality</a>
+                    <a href="#contracting" class="block py-2 text-gray-700">Contracting</a>
+                    <a href="#consulting" class="block py-2 text-gray-700">Consulting</a>
+                    <a href="#construction" class="block py-2 text-gray-700">Construction</a>
+                </div>
+            </div>
+            
+            <a href="#about" class="block py-2 text-blue-900">About Us</a>
+            <a href="#companies" class="block py-2 text-blue-900">Our Companies</a>
+            <a href="#contact" class="block py-2 text-blue-900">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Driving Qatar's Future Through Diversified Excellence</h1>
+                <p class="text-xl mb-8">Nexix Holding is a premier Qatari conglomerate delivering world-class services across multiple industries, from cutting-edge IT solutions to essential healthcare services.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-white text-blue-900 px-6 py-3 rounded-md font-bold hover:bg-gray-100 transition">Contact Us</a>
+                    <a href="#services" class="border-2 border-white px-6 py-3 rounded-md font-bold hover:bg-white hover:text-blue-900 transition">Our Services</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 fade-in">
+                <img src="assests/images/ITServices.png" alt="Nexix Holding Business" class="rounded-lg shadow-xl" style="width: 100%; max-width: 600px; height: auto;">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">About Nexix Holding</h2>
+                <div class="w-20 h-1 bg-blue-700 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="assests/images/Nexixallservices.png" alt="Nexix Holding Business" class="rounded-lg shadow-xl" style="width: 100%; max-width: 600px; height: auto;">
+
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4">Our Vision & Mission</h3>
+                    <p class="text-gray-700 mb-6">Founded in Qatar, Nexix Holding has grown from a modest beginning to become one of the most respected business conglomerates in the region. Our journey reflects Qatar's own remarkable development story.</p>
+                    
+                    <div class="mb-6">
+                        <h4 class="text-xl font-semibold text-blue-800 mb-2">Our Vision</h4>
+                        <p class="text-gray-700">To be the leading diversified business group in Qatar, recognized for excellence across all our sectors and for our contribution to Qatar's national development.</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold text-blue-800 mb-2">Our Mission</h4>
+                        <p class="text-gray-700">To deliver exceptional value to our clients through innovative solutions, operational excellence, and unwavering commitment to quality across all our business verticals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Our Comprehensive Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">From technology to construction, healthcare to hospitality, Nexix Holding offers a complete range of services to meet Qatar's growing needs.</p>
+                <div class="w-20 h-1 bg-blue-700 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- IT Services -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-laptop-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">IT Services</h3>
+                    <p class="text-gray-700 mb-4">Cutting-edge technology solutions including software development, cybersecurity, cloud services, and digital transformation.</p>
+                    <a href="#it-services" class="text-blue-700 font-medium hover:underline">Learn more →</a>
+                </div>
+                
+                <!-- Healthcare -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-hospital-user text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Healthcare</h3>
+                    <p class="text-gray-700 mb-4">Comprehensive medical services including hospitals, clinics, specialized treatments, and medical equipment supply.</p>
+                    <a href="#healthcare" class="text-blue-700 font-medium hover:underline">Learn more →</a>
+                </div>
+                
+                <!-- Home Care -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-home text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Home Care</h3>
+                    <p class="text-gray-700 mb-4">Premium home care services including elderly care, nursing services, and domestic assistance.</p>
+                    <a href="#home-care" class="text-blue-700 font-medium hover:underline">Learn more →</a>
+                </div>
+                
+                <!-- Hospitality -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-utensils text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Hospitality</h3>
+                    <p class="text-gray-700 mb-4">Luxury hotels, restaurants, catering services, and event management for discerning clients.</p>
+                    <a href="#hospitality" class="text-blue-700 font-medium hover:underline">Learn more →</a>
+                </div>
+                
+                <!-- Contracting -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-hard-hat text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Contracting</h3>
+                    <p class="text-gray-700 mb-4">Professional contracting services for civil, mechanical, electrical, and infrastructure projects.</p>
+                    <a href="#contracting" class="text-blue-700 font-medium hover:underline">Learn more →</a>
+                </div>
+                
+                <!-- Consulting -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-700 mb-4">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Consulting</h3>
+                    <p class="text-gray-700 mb-4">Strategic business consulting, financial advisory, and management consulting services.</p>
+                    <a href="#consulting" class="text-blue-700 font-medium hover:underline">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Companies Section -->
+    <section id="companies" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Our Companies</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Nexix Holding comprises several specialized companies, each a leader in its respective field.</p>
+                <div class="w-20 h-1 bg-blue-700 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- IT Company -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Nexix Technologies</h3>
+                    <p class="text-gray-700 mb-4">Providing innovative IT solutions and digital transformation services across Qatar and the region.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-globe-americas mr-2"></i>
+                        <span>nexixholding.com</span>
+                    </div>
+                </div>
+                
+                <!-- Healthcare Company -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Nexix Medical</h3>
+                    <p class="text-gray-700 mb-4">Operating state-of-the-art healthcare facilities and providing premium medical services.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-globe-americas mr-2"></i>
+                        <span>sahatinoori.com</span>
+                    </div>
+                </div>
+                
+                <!-- Home Care Company -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Nexix Care</h3>
+                    <p class="text-gray-700 mb-4">Delivering compassionate and professional home care services across Qatar.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-globe-americas mr-2"></i>
+                        <span>sahatinoori.com</span>
+                    </div>
+                </div>
+                
+                <!-- Hospitality Company -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Nexix Hospitality</h3>
+                    <p class="text-gray-700 mb-4">Managing luxury hotels, fine dining restaurants, and premium catering services.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-globe-americas mr-2"></i>
+                        <span>sahatinoori.com</span>
+                    </div>
+                </div>
+                
+                <!-- Contracting Company -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Nexix Contracting</h3>
+                    <p class="text-gray-700 mb-4">Executing complex construction and infrastructure projects with precision.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-globe-americas mr-2"></i>
+                        <span>www.nexixcontracting.qa</span>
+                    </div>
+                </div>
+                
+                <!-- Consulting Company -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Nexix Advisory</h3>
+                    <p class="text-gray-700 mb-4">Offering strategic business consulting and financial advisory services.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-globe-americas mr-2"></i>
+                        <span>www.nexixadvisory.qa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Detail Pages -->
+    <!-- IT Services Page -->
+    <section id="it-services" class="py-16 bg-gray-50 hidden service-page">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-blue-900">IT Services</h2>
+                <a href="#services" class="text-blue-700 hover:underline flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Services
+                </a>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row mb-8">
+                    <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                        <img src="https://via.placeholder.com/500x300" alt="IT Services" class="rounded-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Digital Transformation for Qatar's Future</h3>
+                        <p class="text-gray-700 mb-4">Nexix Technologies delivers comprehensive IT solutions tailored to Qatar's unique business environment and aligned with Qatar National Vision 2030.</p>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Custom Software Development</li>
+                            <li>Enterprise IT Solutions</li>
+                            <li>Cybersecurity Services</li>
+                            <li>Cloud Computing Solutions</li>
+                            <li>Data Analytics & AI</li>
+                            <li>IT Infrastructure Management</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-3">Why Choose Nexix Technologies?</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-shield-alt text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Local Expertise</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Deep understanding of Qatar's business regulations and cultural context.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-certificate text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Certified Professionals</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Our team holds top industry certifications from Microsoft, Cisco, AWS and more.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-headset text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">24/7 Support</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Round-the-clock technical support with Arabic and English speaking staff.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthcare Page -->
+    <section id="healthcare" class="py-16 bg-gray-50 hidden service-page">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-blue-900">Healthcare Services</h2>
+                <a href="#services" class="text-blue-700 hover:underline flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Services
+                </a>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row mb-8">
+                    <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                        <img src="https://via.placeholder.com/500x300" alt="Healthcare Services" class="rounded-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Compassionate Care, Advanced Medicine</h3>
+                        <p class="text-gray-700 mb-4">Nexix Medical provides comprehensive healthcare services across Qatar, combining international medical standards with local cultural sensitivity.</p>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Specialized Hospitals & Clinics</li>
+                            <li>Diagnostic Centers</li>
+                            <li>Rehabilitation Services</li>
+                            <li>Home Healthcare</li>
+                            <li>Medical Equipment Supply</li>
+                            <li>Pharmaceutical Services</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-3">Our Healthcare Advantages</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-user-md text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Expert Physicians</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Board-certified doctors with international experience and local accreditation.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-procedures text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Advanced Facilities</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">State-of-the-art medical equipment and modern healthcare facilities.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-language text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Multilingual Staff</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Healthcare professionals fluent in Arabic, English, and other languages.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Care Page -->
+    <section id="home-care" class="py-16 bg-gray-50 hidden service-page">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-blue-900">Home Care Services</h2>
+                <a href="#services" class="text-blue-700 hover:underline flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Services
+                </a>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row mb-8">
+                    <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                        <img src="https://via.placeholder.com/500x300" alt="Home Care Services" class="rounded-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Compassionate Care in the Comfort of Home</h3>
+                        <p class="text-gray-700 mb-4">Nexix Care provides professional, personalized home care services that allow clients to maintain their independence and dignity in familiar surroundings.</p>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Elderly Care Services</li>
+                            <li>Post-Hospitalization Care</li>
+                            <li>Chronic Condition Management</li>
+                            <li>Maternity & Newborn Care</li>
+                            <li>Disability Support</li>
+                            <li>Domestic Assistance</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-3">Why Families Choose Nexix Care</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-heart text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Compassionate Caregivers</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Care professionals selected for both skills and emotional intelligence.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-calendar-check text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Flexible Scheduling</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Services available 24/7 with customizable care plans.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-user-shield text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Thorough Vetting</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">All caregivers undergo rigorous background checks and training.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospitality Page -->
+    <section id="hospitality" class="py-16 bg-gray-50 hidden service-page">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-blue-900">Hospitality Services</h2>
+                <a href="#services" class="text-blue-700 hover:underline flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Services
+                </a>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row mb-8">
+                    <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                        <img src="https://via.placeholder.com/500x300" alt="Hospitality Services" class="rounded-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Qatari Hospitality at Its Finest</h3>
+                        <p class="text-gray-700 mb-4">Nexix Hospitality combines international standards with authentic Qatari warmth to create unforgettable guest experiences.</p>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Luxury Hotels & Resorts</li>
+                            <li>Fine Dining Restaurants</li>
+                            <li>Event & Conference Facilities</li>
+                            <li>Catering Services</li>
+                            <li>Tourism Services</li>
+                            <li>Leisure Facilities</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-3">The Nexix Hospitality Difference</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-star text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Five-Star Service</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Exceptional service standards that exceed guest expectations.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-utensils text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Culinary Excellence</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">World-class chefs creating both international and traditional Qatari cuisine.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-hands-helping text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Cultural Sensitivity</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Services designed to respect local customs and traditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contracting Page -->
+    <section id="contracting" class="py-16 bg-gray-50 hidden service-page">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-blue-900">Contracting Services</h2>
+                <a href="#services" class="text-blue-700 hover:underline flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Services
+                </a>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row mb-8">
+                    <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                        <img src="https://via.placeholder.com/500x300" alt="Contracting Services" class="rounded-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Building Qatar's Infrastructure</h3>
+                        <p class="text-gray-700 mb-4">Nexix Contracting delivers high-quality construction and engineering services for Qatar's most ambitious projects.</p>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Civil Engineering</li>
+                            <li>Mechanical & Electrical Contracting</li>
+                            <li>Infrastructure Development</li>
+                            <li>Building Construction</li>
+                            <li>Renovation & Maintenance</li>
+                            <li>Project Management</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-3">Our Contracting Strengths</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-award text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Proven Track Record</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Successful completion of major projects across Qatar.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-users text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Skilled Workforce</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Highly trained engineers, technicians and craftsmen.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-clock text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Timely Delivery</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Projects completed on schedule without compromising quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consulting Page -->
+    <section id="consulting" class="py-16 bg-gray-50 hidden service-page">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-blue-900">Consulting Services</h2>
+                <a href="#services" class="text-blue-700 hover:underline flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Services
+                </a>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row mb-8">
+                    <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                        <img src="https://via.placeholder.com/500x300" alt="Consulting Services" class="rounded-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Strategic Insights for Business Growth</h3>
+                        <p class="text-gray-700 mb-4">Nexix Advisory provides expert consulting services to help businesses navigate Qatar's dynamic market and regulatory environment.</p>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Business Strategy Consulting</li>
+                            <li>Financial Advisory</li>
+                            <li>Market Entry Services</li>
+                            <li>Operational Excellence</li>
+                            <li>Human Capital Solutions</li>
+                            <li>Regulatory Compliance</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-3">Why Clients Value Our Consulting</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-brain text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Local Market Expertise</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Deep understanding of Qatar's business ecosystem.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-handshake text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Proven Methodologies</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Frameworks that deliver measurable results.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-user-tie text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Senior-Level Attention</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Direct access to partners and experienced consultants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Construction Page -->
+    <section id="construction" class="py-16 bg-gray-50 hidden service-page">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-blue-900">Construction Services</h2>
+                <a href="#services" class="text-blue-700 hover:underline flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Services
+                </a>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row mb-8">
+                    <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                        <img src="https://via.placeholder.com/500x300" alt="Construction Services" class="rounded-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Shaping Qatar's Skyline</h3>
+                        <p class="text-gray-700 mb-4">Nexix Construction delivers world-class building projects that combine innovative design with robust engineering.</p>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Commercial Buildings</li>
+                            <li>Residential Complexes</li>
+                            <li>Mixed-Use Developments</li>
+                            <li>Institutional Projects</li>
+                            <li>Interior Fit-Outs</li>
+                            <li>Sustainable Construction</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-900 mb-3">Our Construction Capabilities</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-drafting-compass text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Design-Build Expertise</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Integrated approach from concept to completion.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-leaf text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Green Building</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Sustainable construction practices and materials.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-safety-vest text-blue-700"></i>
+                                </div>
+                                <h5 class="font-bold text-blue-900">Safety First</h5>
+                            </div>
+                            <p class="text-gray-700 text-sm">Industry-leading safety standards and practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Contact Nexix Holding</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Get in touch with our team to discuss how we can support your business needs in Qatar.</p>
+                <div class="w-20 h-1 bg-blue-700 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-blue-900 mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 mb-2">Phone</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="service" class="block text-gray-700 mb-2">Service Interested In</label>
+                                <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="">Select a service</option>
+                                    <option value="it">IT Services</option>
+                                    <option value="healthcare">Healthcare</option>
+                                    <option value="home-care">Home Care</option>
+                                    <option value="hospitality">Hospitality</option>
+                                    <option value="contracting">Contracting</option>
+                                    <option value="consulting">Consulting</option>
+                                    <option value="construction">Construction</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="bg-blue-700 text-white px-6 py-3 rounded-md font-bold hover:bg-blue-800 transition w-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm h-full">
+                        <h3 class="text-xl font-bold text-blue-900 mb-6">Our Offices</h3>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-lg font-semibold text-blue-800 mb-3">Headquarters</h4>
+                            <div class="flex items-start mb-3">
+                                <i class="fas fa-map-marker-alt text-blue-700 mt-1 mr-3"></i>
+                                <p class="text-gray-700">West Bay, Doha, Qatar<br>Nexix Tower, Floor 15</p>
+                            </div>
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-phone-alt text-blue-700 mr-3"></i>
+                                <p class="text-gray-700">+974 77338202</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-blue-700 mr-3"></i>
+                                <p class="text-gray-700">info@nexixholding.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-lg font-semibold text-blue-800 mb-3">Business Hours</h4>
+                            <div class="space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-700">Sunday - Thursday</span>
+                                    <span class="text-gray-700 font-medium">7:30 AM - 4:30 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-700">Friday</span>
+                                    <span class="text-gray-700 font-medium">Closed</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-700">Saturday</span>
+                                    <span class="text-gray-700 font-medium">9:00 AM - 1:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-blue-800 mb-3">Connect With Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-blue-100 text-blue-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-200">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-blue-100 text-blue-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-200">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-blue-100 text-blue-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-200">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-blue-100 text-blue-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-200">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Nexix Holding</h3>
+                    <p class="text-blue-200 mb-4">Qatar's premier business conglomerate delivering excellence across multiple industries.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-200 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-blue-200 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-blue-200 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-blue-200 hover:text-white">About Us</a></li>
+                        <li><a href="#services" class="text-blue-200 hover:text-white">Services</a></li>
+                        <li><a href="#companies" class="text-blue-200 hover:text-white">Our Companies</a></li>
+                        <li><a href="#contact" class="text-blue-200 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#it-services" class="text-blue-200 hover:text-white">IT Services</a></li>
+                        <li><a href="#healthcare" class="text-blue-200 hover:text-white">Healthcare</a></li>
+                        <li><a href="#home-care" class="text-blue-200 hover:text-white">Home Care</a></li>
+                        <li><a href="#hospitality" class="text-blue-200 hover:text-white">Hospitality</a></li>
+                        <li><a href="#contracting" class="text-blue-200 hover:text-white">Contracting</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-300"></i>
+                            <span class="text-blue-200">West Bay, Doha, Qatar</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-blue-300"></i>
+                            <span class="text-blue-200">+974 77338202</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-300"></i>
+                            <span class="text-blue-200">info@nexixholding.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-12 pt-8 text-center text-blue-300">
+                <p>&copy; 2025 Nexix Holding. All Rights Reserved. Proudly Qatari.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Mobile services menu toggle
+        document.getElementById('mobile-services-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-services-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Service page navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetId === '#services') {
+                    // Hide all service pages
+                    document.querySelectorAll('.service-page').forEach(page => {
+                        page.classList.add('hidden');
+                    });
+                    
+                    // Scroll to services section
+                    window.scrollTo({
+                        top: document.querySelector('#services').offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                } 
+                else if (targetId.startsWith('#') && targetId !== '#home' && targetId !== '#about' && 
+                         targetId !== '#companies' && targetId !== '#contact') {
+                    // Hide all service pages
+                    document.querySelectorAll('.service-page').forEach(page => {
+                        page.classList.add('hidden');
+                    });
+                    
+                    // Show the selected service page
+                    if (targetElement) {
+                        targetElement.classList.remove('hidden');
+                        
+                        // Scroll to the service page
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                } 
+                else {
+                    // Hide all service pages
+                    document.querySelectorAll('.service-page').forEach(page => {
+                        page.classList.add('hidden');
+                    });
+                    
+                    // Scroll to other sections
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const service = document.getElementById('service').value;
+                
+                // Simple validation
+                if (name && email && service) {
+                    alert(`Thank you, ${name}! We have received your inquiry about our ${service} services. We will contact you at ${email} shortly.`);
+                    contactForm.reset();
+                } else {
+                    alert('Please fill in all required fields.');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
